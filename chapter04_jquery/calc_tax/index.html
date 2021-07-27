@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <!-- モバイル用：デバイス幅、拡大縮小禁止 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>税込み計算アプリ</title>
+
+    <!-- jQuery -->
+    <script src="../lib/jquery.min.js"></script>
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="../lib/bootstrap/css/bootstrap.min.css">
+    <script src="../lib/bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../lib/common.css"><!-- 表示の微調整用 -->
+
+    <!-- 外部CSS/JavaScript -->
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <script src="js/main.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>税込み計算アプリ</h1>
+
+      <!-- 入力テキスト -->
+      <div class="form-group">
+        <label>金額</label>
+        <input type="number" id="price" name="name" value="1000" class="form-control" />
+      </div>
+
+      <div class="form-group">
+        <label>税率</label>
+        <input type="number" id="taxRate" name="name" value="8" class="form-control" />
+      </div>
+
+      <!-- ボタン -->
+      <button type="button" class="btn btn-primary btn-block" id="btnExec">Exec</button>
+
+      <!-- 三角形 -->
+      <div style="text-align: center; padding: .5em;">
+        <div class="caret" style="text-align: center; border-width: 16px;"></div>
+      </div>
+
+      <!-- 出力テキスト -->
+      <div class="form-group">
+        <label>税額</label>
+        <input type="number" id="taxAmount" name="name" value="" class="form-control" />
+      </div>
+
+      <div class="form-group">
+        <label>税込</label>
+        <input type="number" id="taxIncluded" name="name" value="" class="form-control" />
+      </div>
+    </div>
+  </body>
+</html>

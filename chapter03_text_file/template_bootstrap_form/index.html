@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <!-- モバイル用：デバイス幅、拡大縮小禁止 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Template</title>
+
+    <!-- jQuery -->
+    <script src="../lib/jquery.min.js"></script>
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="../lib/bootstrap/css/bootstrap.min.css">
+    <script src="../lib/bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../lib/common.css"><!-- 表示の微調整用 -->
+
+    <!-- 外部CSS/JavaScript -->
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <script src="js/main.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Template</h1>
+
+      <!-- サーバーへの送信が必要ならformタグで囲う。
+           サーバーへの送信が不要ならformタグを削除。以降のname属性も不要。 -->
+      <form action="/" name="f">
+        <!-- テキスト -->
+        <div class="form-group">
+          <label>名前</label>
+          <input type="text" id="name" name="name" value="Mike" class="form-control" />
+        </div>
+
+        <!-- チェックボックス -->
+        <div class="checkbox">
+          <label>
+            <input type="checkbox" id="chck" name="ok" checked /> ok?
+          </label>
+        </div>
+
+        <!-- チェックボックス（横並び） -->
+        <div class="form-group">
+          <p class="control-label">趣味</p>
+          <div class="checkbox-inline">
+            <label>
+              <input type="checkbox" id="hbyMovie" name="hbyMovie" checked /> 映画
+            </label>
+          </div>
+          <div class="checkbox-inline">
+            <label>
+              <input type="checkbox" id="hbyComic" name="hbyComic" checked /> マンガ
+            </label>
+          </div>
+        </div>
+
+        <!-- ラジオボタン -->
+        <div class="form-group">
+          <p class="control-label">性別</p>
+          <div class="radio-inline">
+            <label>
+              <input type="radio" id="sexMale" name="sex" value="male" checked /> 男性
+            </label>
+          </div>
+          <div class="radio-inline">
+            <label>
+              <input type="radio" id="sexFemale" name="sex" value="female" /> 女性
+            </label>
+          </div>
+        </div>
+
+        <!-- セレクト -->
+        <div class="form-group">
+          <p class="control-label">リスト</p>
+          <div class="form-group">
+            <select class="form-control" id="lst" name="lst">
+              <option value="lst1">リスト1</option>
+              <option value="lst2" selected>リスト2</option>
+              <option value="lst3">リスト3</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- テキストエリア -->
+        <div class="form-group">
+          <p class="control-label">自由記入</p>
+          <textarea class="form-control" rows="3" id="free" name="free">aaaaa</textarea>
+        </div>
+
+        <!-- ボタン、送信 -->
+        <button type="button" class="btn btn-primary" id="btnExec">Exec</button>
+        <button type="submit" class="btn btn-default">Submit</button>
+        <button type="button" class="btn btn-primary btn-block" id="btnExec2">Exec2</button>
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <!-- モバイル用：デバイス幅、拡大縮小禁止 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>CSS Inner</title>
+
+    <!-- 内部CSS -->
+    <style>
+	body {
+		background: #fff;
+	}
+
+	#explanation {
+		background: #ddd;
+		border: solid 2px #888;
+		border-radius: 8px;
+		padding: 8px 12px;
+	}
+
+	.docBlock {
+		background: #eee;
+		border: solid 2px #ccc;
+		border-radius: 8px;
+		padding: 12px 12px;
+		margin-top: 1em;
+	}
+
+	.docTitle {
+		background: #fff;
+		border-top: solid 2px #ddd;
+		border-right: solid 2px #ddd;
+		border-left: solid 2px #aaa;
+		border-bottom: solid 2px #aaa;
+		border-radius: 8px;
+		padding: 4px 8px;
+		font-weight: bold;
+		font-size: 120%;
+		margin-bottom: 0.5em;
+	}
+
+	.docBody {
+		background: #fff;
+		border: dotted 2px #aaa;
+		border-radius: 8px;
+		padding: 12px 12px;
+		margin-top: 1em;
+	}
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>CSS Inner</h1>
+
+      <div id="explanation">早口言葉のコレクションです。</div>
+
+      <!-- ドキュメント1 -->
+      <div class="docBlock">
+        <div class="docTitle">早口言葉1</div>
+        <div class="docBody">となりの客は、よく柿食う客だ。</div>
+      </div>
+
+      <!-- ドキュメント2 -->
+      <div class="docBlock">
+        <div class="docTitle">早口言葉2</div>
+        <div class="docBody">赤巻紙、青巻紙、黄巻紙。</div>
+      </div>
+
+    </div>
+  </body>
+</html>
