@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <!-- モバイル用：デバイス幅、拡大縮小禁止 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>質問</title>
+
+    <!-- jQuery -->
+    <script src="../lib/jquery.min.js"></script>
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="../lib/bootstrap/css/bootstrap.min.css">
+    <script src="../lib/bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../lib/common.css"><!-- 表示の微調整用 -->
+
+    <!-- 外部CSS/JavaScript -->
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <script src="js/main.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>質問</h1>
+
+      <!-- ラジオボタン -->
+      <div class="form-group">
+        <p class="control-label">1 + 1 は？</p>
+        <div class="radio-inline">
+          <label>
+            <input type="radio" id="ans1" name="answer" value="1" /> 1
+          </label>
+        </div>
+        <div class="radio-inline">
+          <label>
+            <input type="radio" id="ans2" name="answer" value="2" /> 2
+          </label>
+        </div>
+        <div class="radio-inline">
+          <label>
+            <input type="radio" id="ans3" name="answer" value="3" /> 3
+          </label>
+        </div>
+      </div>
+
+      <!-- パネル -->
+      <div class="panel panel-default" id="pnl1">
+        <div class="panel-heading"><b>結果表示</b></div>
+        <div class="panel-body">
+        </div>
+      </div>
+
+    </div>
+  </body>
+</html>

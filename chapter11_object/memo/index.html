@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <!-- モバイル用：デバイス幅、拡大縮小禁止 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>メモ アプリ</title>
+
+    <!-- jQuery -->
+    <script src="../lib/jquery.min.js"></script>
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="../lib/bootstrap/css/bootstrap.min.css">
+    <script src="../lib/bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../lib/common.css"><!-- 表示の微調整用 -->
+
+    <!-- 外部JavaScript -->
+    <!-- https://github.com/js-cookie/js-cookie -->
+    <script src="js/js.cookie.js"></script>
+
+    <!-- 外部CSS/JavaScript -->
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <script src="js/main.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>メモ アプリ</h1>
+
+      <div class="panel panel-default" id="pnl1">
+        <div class="panel-heading"><b>説明</b></div>
+        <div class="panel-body">
+          <p>cookie を使うので、サーバー上で実行して下さい。</p>
+        </div>
+      </div>
+
+      <!-- テンプレート -->
+      <div style="display: none;" id="template">
+        <div class="form-group memo-group">
+          <!-- テキスト -->
+          <input type="text" class="form-control memo-title" value="%s" />
+          <!-- テキストエリア -->
+          <textarea class="form-control memo-body" rows="3">%s</textarea>
+        </div>
+      </div>
+
+      <!-- メモ追加部分 -->
+      <div class="form-group">
+        <!-- テキスト -->
+        <input type="text" id="title" class="form-control" placeholder="タイトル" />
+        <!-- テキストエリア -->
+        <textarea class="form-control" rows="3" placeholder="本文" id="body"></textarea>
+        <!-- ボタン -->
+        <button type="button" class="btn btn-primary btn-block" id="btnAdd">追加</button>
+      </div>
+
+      <div id="memoArea">
+      </div>
+
+      <!-- メモ リセット ボタン -->
+      <div class="form-group">
+        <!-- ボタン -->
+        <button type="button" class="btn btn-primary btn-block" id="btnReset">リセット</button>
+      </div>
+    </div>
+  </body>
+</html>

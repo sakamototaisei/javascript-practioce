@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <!-- モバイル用：デバイス幅、拡大縮小禁止 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>三択問題アプリ</title>
+
+    <!-- jQuery -->
+    <script src="../lib/jquery.min.js"></script>
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="../lib/bootstrap/css/bootstrap.min.css">
+    <script src="../lib/bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../lib/common.css"><!-- 表示の微調整用 -->
+
+    <!-- 外部CSS/JavaScript -->
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <script src="js/main.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>三択問題アプリ</h1>
+
+      <!-- 問題パネル1 -->
+      <div class="panel panel-default" id="pnl1">
+        <div class="panel-heading"><b>問題1.　地球で一番高い山は？</b></div>
+        <div class="panel-body">
+          <!-- ラジオボタン -->
+          <div class="form-group">
+            <div class="radio">
+              <label>
+                <input type="radio" name="q1" value="1" /> K2
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="q1" value="2" /> エベレスト
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="q1" value="3" /> 富士山
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 問題パネル2 -->
+      <div class="panel panel-default" id="pnl2">
+        <div class="panel-heading"><b>問題2.　太陽系で一番重い惑星は？</b></div>
+        <div class="panel-body">
+          <!-- ラジオボタン -->
+          <div class="form-group">
+            <div class="radio">
+              <label>
+                <input type="radio" name="q2" value="1" /> 地球
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="q2" value="2" /> 火星
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="q2" value="3" /> 木星
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 問題パネル3 -->
+      <div class="panel panel-default" id="pnl3">
+        <div class="panel-heading"><b>問題3.　日本で一番広い都道府県は？</b></div>
+        <div class="panel-body">
+          <!-- ラジオボタン -->
+          <div class="form-group">
+            <div class="radio">
+              <label>
+                <input type="radio" name="q3" value="1" /> 福島県
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="q3" value="2" /> 岩手県
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="q3" value="3" /> 北海道
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ボタン -->
+      <div class="form-group">
+        <button type="button" class="btn btn-primary btn-block" id="btnCheck">
+          結果を見る
+        </button>
+      </div>
+
+      <!-- 結果出力 -->
+      <div class="panel panel-default">
+        <div class="panel-heading"><b> </b></div>
+        <div class="panel-body" id="res">?</div>
+        <div class="panel-footer"><b> </b></div>
+      </div>
+    </div>
+  </body>
+</html>

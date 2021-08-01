@@ -1,0 +1,11 @@
+#memoArea {
+	padding: 1em 0;
+}
+.memo-title {
+	background: #85bff0;
+	color: #fff;
+	font-weight: bold;
+}
+.memo-body {
+	background: #c4e2fa;
+}

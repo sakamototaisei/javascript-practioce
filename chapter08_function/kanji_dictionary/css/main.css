@@ -1,0 +1,9 @@
+.row div {
+	border: solid 1px #eee;
+	text-align: center;
+}
+
+.exp {
+	display: none;
+}
+

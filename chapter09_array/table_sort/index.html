@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <!-- モバイル用：デバイス幅、拡大縮小禁止 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>テーブル ソート</title>
+
+    <!-- jQuery -->
+    <script src="../lib/jquery.min.js"></script>
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="../lib/bootstrap/css/bootstrap.min.css">
+    <script src="../lib/bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../lib/common.css"><!-- 表示の微調整用 -->
+
+    <!-- 外部CSS/JavaScript -->
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <script src="js/main.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>テーブル ソート</h1>
+
+      <!-- テーブル -->
+      <div class="form-group">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th>県名</th>
+              <th>面積km<sup>2</sup></th>
+            </tr>
+          </thead>
+          <tbody id="lstBdy">
+            <tr>
+              <td>ホッカイドウ</td>
+              <td>83424.22</td>
+            </tr>
+            <tr>
+              <td>イワテケン</td>
+              <td>15275.01</td>
+            </tr>
+            <tr>
+              <td>フクシマケン</td>
+              <td>13783.75</td>
+            </tr>
+            <tr>
+              <td>ナガノケン</td>
+              <td>13561.56</td>
+            </tr>
+            <tr>
+              <td>ニイガタケン</td>
+              <td>12584.10</td>
+            </tr>
+          </tbody>
+        </table>
+        <span class="help-block">出典：<a href="https://ja.wikipedia.org/wiki/%E9%83%BD%E9%81%93%E5%BA%9C%E7%9C%8C%E3%81%AE%E9%9D%A2%E7%A9%8D%E4%B8%80%E8%A6%A7">Wikipedia</a></span>
+      </div>
+
+      <!-- ボタン -->
+      <button type="button" class="btn btn-primary" id="btnSortName">名前でソート</button>
+      <button type="button" class="btn btn-primary" id="btnSortArea">面積でソート</button>
+    </div>
+  </body>
+</html>

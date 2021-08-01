@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <!-- モバイル用：デバイス幅、拡大縮小禁止 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>送料計算</title>
+
+    <!-- jQuery -->
+    <script src="../lib/jquery.min.js"></script>
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="../lib/bootstrap/css/bootstrap.min.css">
+    <script src="../lib/bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../lib/common.css"><!-- 表示の微調整用 -->
+
+    <!-- 外部CSS/JavaScript -->
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <script src="js/main.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>送料計算</h1>
+
+      <!-- セレクト -->
+      <div class="form-group">
+        <p class="control-label">金額</p>
+        <div class="form-group">
+          <select class="form-control" id="lst" name="lst" size="5">
+            <option value="1000">1000円</option>
+            <option value="2000">2000円</option>
+            <option value="3000">3000円</option>
+            <option value="4000">4000円</option>
+            <option value="5000">5000円</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- パネル -->
+      <div class="panel panel-default" id="pnl1">
+        <div class="panel-heading"><b>送料は？</b></div>
+        <div class="panel-body">
+        </div>
+      </div>
+
+    </div>
+  </body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <!-- モバイル用：デバイス幅、拡大縮小禁止 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>字典アプリ</title>
+
+    <!-- jQuery -->
+    <script src="../lib/jquery.min.js"></script>
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="../lib/bootstrap/css/bootstrap.min.css">
+    <script src="../lib/bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../lib/common.css"><!-- 表示の微調整用 -->
+
+    <!-- 外部CSS/JavaScript -->
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <script src="js/main.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>字典アプリ</h1>
+
+      <div class="panel panel-default">
+        <div class="panel-body">
+          <div class="row">
+            <div class="col-xs-3">
+              犬
+              <span class="exp">イヌ（犬、狗、学名：Canis lupus familiaris、ラテン語名：canis、英語名［国際通用名］：dog、domestic dog）は、ネコ目（食肉目）- イヌ科- イヌ属に分類される哺乳類の一種。</span>
+            </div>
+            <div class="col-xs-3">
+              猫
+              <span class="exp">ネコ（猫）は、狭義にはネコ目（食肉目）- ネコ亜目- ネコ科- ネコ亜科- ネコ属- ヤマネコ種- イエネコ亜種に分類される小型哺乳類であるイエネコ（家猫、学名：Felis silvestris catus）の通称である。人間によくなつくため、イヌ（犬）と並ぶ代表的なペットとして世界中で広く飼われている。</span>
+            </div>
+            <div class="col-xs-3">
+              猿
+              <span class="exp">日本語におけるサル（猿）とは、通俗的な意味ではサル目（霊長目）のうち、ヒト（古人類を含む）を除いたものの総称である。ただし、生物学的観点から見ればヒトもまた「サル」の一種に他ならない。 日本の歴史的文献においては、単に猿といえば日本固有種のニホンザルを指す場合が多い。</span>
+            </div>
+            <div class="col-xs-3">
+              牛
+              <span class="exp">ウシ（牛 英名:cattle）は、哺乳綱鯨偶蹄目ウシ科ウシ亜科の動物。野生のオーロックス（絶滅）をもとにして、新石器時代に西アジアで家畜化されたと考えられる。</span>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-xs-3">
+              馬
+              <span class="exp">ウマ（馬 ）は、ウマ目（奇蹄目） ウマ科に属する動物の総称。現生は、いずれもウマ属に属するウマ、シマウマ、ロバの仲間、5亜属9種のみである。狭義の「ウマ」は、このうち特に種としてのウマ (学名:Equus caballus) のみを指す。</span>
+            </div>
+            <div class="col-xs-3">
+              羊
+              <span class="exp">ヒツジ（羊、学名 Ovis aries）は、動物界 脊椎動物門 哺乳綱 ウシ目 ウシ科 ヤギ亜科の1種である。角をもち、主に羊毛のために家畜化されている。</span>
+            </div>
+            <div class="col-xs-3">
+              鼠
+              <span class="exp">ネズミ（鼠または鼡）は、哺乳類ネズミ目（齧歯目）の数科の総称である。ハツカネズミ、ドブネズミなど、1300種あるいは1065-1800種が含まれ、一大グループを形成している。</span>
+            </div>
+            <div class="col-xs-3">
+              兎
+              <span class="exp">ウサギ（兎、兔）は、最も広義にはウサギ目、狭義にはウサギ科、さらに狭義にはウサギ亜科もしくはノウサギ亜科 Leporinaeの総称である。</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- テキストエリア -->
+      <div class="form-group">
+        <p class="control-label">説明</p>
+        <textarea class="form-control" rows="5" id="expArea"></textarea>
+        <span class="help-block">出典：Wikipedia</span>
+      </div>
+
+    </div>
+  </body>
+</html>

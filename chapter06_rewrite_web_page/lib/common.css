@@ -1,0 +1,5 @@
+.checkbox label,
+.radio label,
+.control-label {
+	font-weight: bold;
+}

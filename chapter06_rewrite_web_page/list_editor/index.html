@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <!-- モバイル用：デバイス幅、拡大縮小禁止 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>アウトライン メモ</title>
+
+    <!-- jQuery -->
+    <script src="../lib/jquery.min.js"></script>
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="../lib/bootstrap/css/bootstrap.min.css">
+    <script src="../lib/bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../lib/common.css"><!-- 表示の微調整用 -->
+
+    <!-- 外部CSS/JavaScript -->
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <script src="js/main.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>アウトライン メモ</h1>
+
+      <!-- ボタン -->
+      <div class="form-group">
+        <input type="text" id="line" value="text" />
+        <button type="button" class="btn btn-primary" id="btnAppend">Append</button>
+        <button type="button" class="btn btn-primary" id="btnNest">Nest</button>
+      </div>
+
+      <!-- テンプレート -->
+      <div id="template" style="display: none;">
+        <li>
+          <label>
+            <input type="radio" name="sel" />
+            <span>%s</span>
+          </label>
+        </li>
+      </div>
+
+      <!-- リスト表示 -->
+      <ul>
+        <li id="group-1">
+          <label>
+            <input type="radio" name="sel" checked />
+            <span>ルート</span>
+          </label>
+        </li>
+      </ul>
+
+  </body>
+</html>

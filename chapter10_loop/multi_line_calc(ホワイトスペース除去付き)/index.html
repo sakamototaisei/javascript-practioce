@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <!-- モバイル用：デバイス幅、拡大縮小禁止 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>連続計算アプリ</title>
+
+    <!-- jQuery -->
+    <script src="../lib/jquery.min.js"></script>
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="../lib/bootstrap/css/bootstrap.min.css">
+    <script src="../lib/bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../lib/common.css"><!-- 表示の微調整用 -->
+
+    <!-- 外部CSS/JavaScript -->
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <script src="js/main.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>連続計算アプリ</h1>
+
+      <!-- テキストエリア -->
+      <div class="form-group">
+        <p class="control-label">計算式</p>
+        <textarea class="form-control" rows="8" id="source">
+1+2
+3*4
+	5-6*7
+	(8 - 9) * (1 + 2)
+数値以外
+</textarea>
+      </div>
+
+      <div class="form-group">
+        <!-- ボタン --><!-- 2018-04-25 btnClac の誤植を btnCalc に修正 -->
+        <button type="button" class="btn btn-primary btn-block" id="btnCalc">計算</button>
+
+        <!-- 三角形 -->
+        <div style="text-align: center; padding-top: .5em;">
+          <div class="caret" style="text-align: center; border-width: 16px;"></div>
+        </div>
+      </div>
+
+      <!-- テキストエリア -->
+      <div class="form-group">
+        <p class="control-label">計算結果</p>
+        <textarea class="form-control" rows="8" id="result"></textarea>
+      </div>
+
+    </div>
+  </body>
+</html>
