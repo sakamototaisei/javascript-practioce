@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <!-- モバイル用：デバイス幅、拡大縮小禁止 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>角丸四角画像生成アプリ</title>
+
+    <!-- jQuery -->
+    <script src="../lib/jquery.min.js"></script>
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="../lib/bootstrap/css/bootstrap.min.css">
+    <script src="../lib/bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../lib/common.css"><!-- 表示の微調整用 -->
+
+    <!-- 外部CSS/JavaScript -->
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <script src="js/main.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>角丸四角画像生成アプリ</h1>
+
+      <!-- テキスト -->
+      <div class="form-inline form-group">
+        <div class="form-group">
+          <label>画像横幅</label>
+          <input type="number" id="imgW" value="320" class="form-control" />
+        </div>
+        <div class="form-group">
+          <label>画像高さ</label>
+          <input type="number" id="imgH" value="240" class="form-control" />
+        </div>
+      </div>
+
+      <div class="form-inline form-group">
+        <div class="form-group">
+          <label>矩形横幅</label>
+          <input type="number" id="rctW" value="300" class="form-control" />
+        </div>
+        <div class="form-group">
+          <label>矩形高さ</label>
+          <input type="number" id="rctH" value="220" class="form-control" />
+        </div>
+      </div>
+
+      <div class="form-inline form-group">
+        <div class="form-group">
+          <label>角丸サイズ</label>
+          <input type="number" id="rctR" value="40" class="form-control" />
+        </div>
+        <div class="form-group">
+          <label>線幅</label>
+          <input type="number" id="lnSz" value="5" class="form-control" />
+        </div>
+      </div>
+
+      <div class="form-inline form-group">
+        <div class="form-group">
+          <label>矩形色</label>
+          <input type="text" id="rctCol" value="#ffffff" class="form-control" />
+        </div>
+        <div class="form-group">
+          <label>線色</label>
+          <input type="text" id="lnCol" value="#aa0000" class="form-control" />
+        </div>
+      </div>
+
+      <div class="form-inline form-group">
+        <div class="form-group">
+          <label>文字列</label>
+          <input type="text" id="txtTxt" value="合格" class="form-control" />
+        </div>
+        <div class="form-group">
+          <label>文字色</label>
+          <input type="text" id="txtCol" value="#aa0000" class="form-control" />
+        </div>
+      </div>
+
+      <!-- ボタン -->
+      <div class="form-inline form-group">
+        <button type="button" class="btn btn-primary btn-block" id="btnExec">Exec</button>
+      </div>
+
+      <!-- 出力 -->
+      <div id="outImg">
+      </div>
+    </div>
+  </body>
+</html>

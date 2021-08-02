@@ -1,0 +1,13 @@
+#dropArea {
+	height: 8em;
+}
+.drop {
+	background: #ffa;
+}
+
+#outArea {
+	background: url(data:image/gif;base64,R0lGODlhEAAQAPEBAAAAAL+/v////wAAACH5BAAAAAAALAAAAAAQABAAAAIfjG+iq4jM3IFLJipswNly/XkcBpIiVaInlLJr9FZWAQA7) fixed;
+	padding: 0;
+	display: inline-block;
+}
+
