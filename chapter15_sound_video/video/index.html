@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <!-- モバイル用：デバイス幅、拡大縮小禁止 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>動画再生アプリ</title>
+
+    <!-- jQuery -->
+    <script src="../lib/jquery.min.js"></script>
+
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="../lib/bootstrap/css/bootstrap.min.css">
+    <script src="../lib/bootstrap/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="../lib/common.css"><!-- 表示の微調整用 -->
+
+    <!-- 外部CSS/JavaScript -->
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <script src="js/main.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <h1>動画再生アプリ</h1>
+
+      <div style="text-align: center;">
+        <video poster="video/img.jpg" controls id="video" width="320" height="180">
+          <source src="video/video.webm">
+          <source src="video/video.mp4">
+          <source src="video/video.ogv">
+          <p>動画を再生するには、videoタグをサポートしたブラウザが必要です。</p>
+        </video>
+      </div>
+
+      <!-- ボタン -->
+      <button type="button" class="btn btn-primary btn-block" id="btnPlay">Play</button>
+      <button type="button" class="btn btn-primary btn-block" id="btnPause">Pause</button>
+      <button type="button" class="btn btn-primary btn-block" id="btnStop">Stop</button>
+      <span class="help-block">動画：<a href="http://www.wedistill.io/videos/134">Distill: Free HD Stock Video & HD Video Clips</a> 変換：<a href="http://www.xmedia-recode.de/">XMediaRecode</a></span>
+    </div>
+  </body>
+</html>

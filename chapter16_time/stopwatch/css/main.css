@@ -1,0 +1,15 @@
+#output {
+	font-size: 500%;
+}
+
+@media screen and ( max-width:479px ) {
+	#output {
+		font-size: 400%;
+	}
+}
+
+@media screen and ( max-width:374px ) {
+	#output {
+		font-size: 300%;
+	}
+}
